@@ -12,8 +12,8 @@ export default function CoverImage({ title, slug, image: source, priority }) {
     >
       <Image
         className="w-full h-auto"
-        width={2000}
-        height={1000}
+        width={1600}
+        height={800}
         alt={`Cover Image for ${title}`}
         src={urlForImage(source).height(1000).width(2000).url()}
         sizes="100vw"

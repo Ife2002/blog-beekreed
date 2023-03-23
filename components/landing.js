@@ -14,8 +14,9 @@ export default function Landing({ allPosts, preview }) {
         <Head>
           <title>{`Beekreed blog`}</title>
         </Head>
+        <Intro />
         <Container>
-          <Intro />
+          
           {heroPost && (
             <HeroPost
               title={heroPost.title}
