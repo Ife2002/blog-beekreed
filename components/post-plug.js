@@ -15,18 +15,26 @@ export default function PostPlug({
     <div>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} image={coverImage} />
-      </div>
-      <h3 className="mb-3 font-sans font-semibold text-3xl leading-snug">
-        <Link href={`/posts/${slug}`} className="">
-          {title}
-        </Link>
-      </h3>
-      <div className="mb-4 font-sans text-[#303030] text-lg flex flex-row items-center">
-      {author && <Avatar name={author.name} picture={author.picture} />}
-      <h1 className='mx-[1rem]'>{" • "}</h1>
+        <div className="w-[100%] bg-black">
+        <div className="mb-20 text-purple-600 p-5 md:grid md: md:gap-x-16 lg:gap-x-8 md:mb-28">
+        <div className='font-sans'>
         <Date dateString={date} />
+          <h3 className="mb-4 font-sans text-white font-medium text-3xl leading-tight lg:text-6xl ">
+              {title}
+          </h3>
+          <div>
+          <p className="mb-4 text-white font-sans font-normal text-lg leading-relaxed">{excerpt}</p>
+          
+        </div>
+          <div className="mb-4 font-sans mt-[2rem]  font-medium text-[#303030] flex flex-col justify-center text-lg md:mb-0">
+          {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
+            <button  className=' text-purple-600 bg-white p-2 rounded-[6rem] w-[8rem]'>Read article</button>
+          </div>
+        </div>
+        
       </div>
-      <p className="mb-4 font-sans font-normal text-lg leading-relaxed">{excerpt}</p>
+      </div>
+      </div>
       
     </div>
   )
