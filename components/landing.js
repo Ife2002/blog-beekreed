@@ -30,7 +30,6 @@ export default function Landing({ allPosts, preview }) {
           )}
         </ContainerTwo>
         <Container>
-          
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

@@ -2,11 +2,11 @@ import PostPlug from './post-plug'
 
 export default function MoreStories({ posts }) {
   return (
-    <section>
-      <h2 className="mb-8 mt-8 font-sans font-semibold text-[3rem] md:text-7xl tracking-tighter leading-tight">
+    <section className='bg-black'>
+      <h2 className="mb-8 text-white font-sans font-normal text-[1rem] md:text-5xl tracking-tighter leading-tight">
         More Stories
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="grid grid-cols-1  md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 ">
         {posts.map((post) => (
           <PostPlug
             key={post.slug}

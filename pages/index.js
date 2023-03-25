@@ -1,12 +1,22 @@
 import { indexQuery } from '../lib/queries'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 import { PreviewSuspense } from 'next-sanity/preview'
+import { useState, useEffect } from 'react'
 import { lazy } from 'react'
 import Landing from '../components/landing'
+import Loader from '../components/Loader'
 
 const LandingPreview = lazy(() => import('../components/landing-preview'))
 
 export default function IndexPage({ allPosts, preview }) {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(()=> {
+    setTimeout(() => {
+      setLoading(false);
+    }, 7800);
+  })
+
   if (preview) {
     return (
       <PreviewSuspense fallback="Loading...">
@@ -15,7 +25,11 @@ export default function IndexPage({ allPosts, preview }) {
     )
   }
 
-  return <Landing allPosts={allPosts} />
+ 
+
+  return ( 
+   <Landing allPosts={allPosts} />
+    )
 }
 
 export async function getStaticProps({ preview = false }) {

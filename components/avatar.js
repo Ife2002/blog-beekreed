@@ -17,7 +17,7 @@ export default function Avatar({ name, picture }) {
           alt={name}
         />
       </div>
-      <div className="text-xl ">{name}</div>
+      <div className="text-xl text-[#b4b4b4]">{name}</div>
     </div>
   )
 }
