@@ -26,7 +26,9 @@ export default function HeroPost({
       <h1 className="text-6xl my-12 text-white font-sans md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
       Featured posts
       </h1>
+        <div className='h-[50vh] w-[100%] overflow-hidden'>
         <CoverImage slug={slug} title={title} image={coverImage} priority />
+        </div>
         <div className="w-[100%] ">
         <div className="mb-20 text-[#929292] py-10 md:grid md: md:gap-x-16 lg:gap-x-8 md:mb-28">
         <div>
