@@ -21,7 +21,7 @@ export default function PostPlug({
         <div className='bg-purple-500 w-[5rem] font-sans text-purple-200 font-medium px-4 py-2 rounded-[0.1rem]'>
         Article
         </div>
-          <h3 className="mb-4 mt-5 mr-6 font-sans text-white font-semibold text-[2rem] leading-tight lg:text-[1.7rem] ">
+          <h3 className="mb-4 mt-5 mr-6 font-sans text-white font-semibold text-[1.3rem] leading-tight lg:text-[1.7rem] ">
               {title}
           </h3>
           <div className='text-white'>

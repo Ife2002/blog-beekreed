@@ -6,16 +6,15 @@ import PostTitle from '../components/post-title'
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
-    <div className=" text-white font-sans md:block md:mb-12">
+    <div className=" text-white text-[1.2rem] font-sans md:block md:mb-12">
     
      <PostTitle>{title}</PostTitle>
      <Date dateString={date} />
-     
-      
+
       </div>
       
       
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div className="my-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} image={coverImage} priority />
       </div>
       <div className="max-w-2xl mx-auto">
