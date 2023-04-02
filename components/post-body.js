@@ -1,7 +1,8 @@
 import markdownStyles from './markdown-styles.module.css'
 import { PortableText } from '@portabletext/react'
+import Avatar from '../components/avatar'
 
-export default function PostBody({ content }) {
+export default function PostBody({ content, author }) {
   
   const myPortableTextComponents = {
     types: {
@@ -38,6 +39,9 @@ export default function PostBody({ content }) {
   return (
     <div className={`max-w-2xl font-sans text-white mx-auto ${markdownStyles.markdown}`}>
       <PortableText value={content} components={myPortableTextComponents} />
+      <div className='w-[100%] flex justify-center'>
+        {author && <Avatar name={author.name} picture={author.picture} />}
+        </div>
     </div>
   )
 }

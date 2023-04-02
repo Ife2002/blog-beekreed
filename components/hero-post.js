@@ -21,26 +21,28 @@ export default function HeroPost({
 
   return (
     <section>
-      
-      <div className="mb-8 md:p-12 font-sans border-b-[1px] border-[#3a3a3a] hover:scale-100">
-      <h1 className="text-6xl my-12 text-white font-sans md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-      Featured posts
-      </h1>
-        <div className='h-[50vh] w-[100%] overflow-hidden'>
+       {/* <h1 className="text-[2rem] my-12 text-white font-sans font-bold tracking-tighter leading-tight md:pr-8">
+      Latest post
+      </h1> */}
+      <div className="mb-1 p-[2rem] md:p-12 md:flex md:flex-row font-sans border-b-[1px] border-[#3a3a3a] ">
+     
+        <div className=' bg-white w-[100%]'>
         <CoverImage slug={slug} title={title} image={coverImage} priority />
         </div>
-        <div className="w-[100%] ">
-        <div className="mb-20 text-[#929292] py-10 md:grid md: md:gap-x-16 lg:gap-x-8 md:mb-28">
+        <div className="w-[100%] flex items-stretch bg-purple-600 p-8">
+        <div className="text-[#929292] md:grid md: md:gap-x-16 lg:gap-x-8 ">
         <div>
-        
-          <h3 className="mb-4 font-sans text-white font-semibold text-4xl leading-tight lg:text-6xl ">
+        <div className='w-[100%] font-sans sm:text-[1.5rem] text-purple-200 font-medium  rounded-[0.1rem]'>
+       <h1 className='bg-purple-500 px-4 py-2'>Article</h1>
+        </div>
+          <h3 className="mb-4 mt-5 mr-6 font-sans text-white font-semibold text-[1.8rem] xl:leading-tight lg:text-[1.7rem] ">
               {title}
           </h3>
-          <Date dateString={date} />
-          {/* <div>
-          <p className="mb-4 text-white font-sans font-normal text-lg leading-relaxed">{excerpt}</p>
-          
+          <div className='text-white'>
+          <p className=" lg:mr-9 mr-7 mb-3 text-[#d4d4d4] font-sans font-medium lg:text-[1rem] text-[1.5rem] leading-relaxed">{excerpt}</p>
+          {/* <Date dateString={date} /> */}
         </div>
+          {/* 
           <div className="mb-4 font-sans mt-[2rem]  font-medium text-[#303030] flex flex-col justify-center text-lg md:mb-0">
           {author && <Avatar name={author.name} picture={author.picture} />} 
             <button onClick={handleClick} className=' text-white bg-purple-600 p-2 rounded-[6rem] w-[8rem]'>Read article</button>

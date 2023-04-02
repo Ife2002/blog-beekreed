@@ -7,11 +7,11 @@ export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
     <div className=" text-white font-sans md:block md:mb-12">
+    
      <PostTitle>{title}</PostTitle>
-      <Date dateString={date} />
-      <div className='w-[100%] flex justify-end'>
-        {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
+     <Date dateString={date} />
+     
+      
       </div>
       
       
@@ -19,9 +19,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <CoverImage title={title} image={coverImage} priority />
       </div>
       <div className="max-w-2xl mx-auto">
-        <div className="block mb-6 md:hidden">
+        {/* <div className="block mb-6 md:hidden">
           {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
+        </div> */}
         <div className="mb-6 font-sans text-lg">
           
         </div>

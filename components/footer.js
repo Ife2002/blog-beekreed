@@ -3,7 +3,7 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="mt-auto pt-[10rem] font-sans w-full bg-black max-w-[100rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <footer className="mt-auto pt-[10rem] font-sans w-full bg-black max-w-[100vw] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
    
     <div className="text-center">
       <div>

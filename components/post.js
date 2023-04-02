@@ -33,7 +33,7 @@ export default function Post({ data = {}, preview = false }) {
             <article>
               <Head>
                 <title>
-                  {`${post.title} | Beekreed`}
+                  {`Beekreed | ${post.title} `}
                 </title>
                 {post.coverImage?.asset?._ref && (
                   <meta
@@ -53,7 +53,7 @@ export default function Post({ data = {}, preview = false }) {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} author={post.author} />
             </article>
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
