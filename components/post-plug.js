@@ -13,32 +13,28 @@ export default function PostPlug({
 }) {
   return (
     <div>
-      <div className="mb-5 font-sans md:flex md:flex-row ">
-        <CoverImage slug={slug} title={title} image={coverImage} />
-        <div className="w-[100%] flex items-stretch bg-purple-600 p-8">
-        <div className="text-[#929292] md:grid md: md:gap-x-16 lg:gap-x-8 ">
-        <div>
-        <div className='bg-purple-500 w-[5rem] font-sans text-purple-200 font-medium px-4 py-2 rounded-[0.1rem]'>
-        Article
-        </div>
-          <h3 className="mb-4 mt-5 mr-6 font-sans text-white font-semibold text-[1.3rem] leading-tight lg:text-[1.7rem] ">
-              {title}
-          </h3>
-          <div className='text-white'>
-          <p className=" mr-9 mb-3 text-white font-sans font-normal text-[1rem] leading-relaxed">{excerpt}</p>
-          {/* <Date dateString={date} /> */}
-        </div>
-          {/* 
-          <div className="mb-4 font-sans mt-[2rem]  font-medium text-[#303030] flex flex-col justify-center text-lg md:mb-0">
-          {author && <Avatar name={author.name} picture={author.picture} />} 
-            <button onClick={handleClick} className=' text-white bg-purple-600 p-2 rounded-[6rem] w-[8rem]'>Read article</button>
-          </div> */}
-        </div>
-        
-      </div>
-      </div>
-      </div>
       
+      <div className=" font-sans pt-8 md:pt-0" >
+                            <Link href={`posts/${slug}`}>
+                                <span className="block text-gray-400 text-sm">
+                                <Date dateString={date} />
+                                </span>
+                                <div className="mt-2">
+                                    <h3 className="text-xl text-white font-semibold hover:underline">
+                                        {title}
+                                    </h3>
+                                    <p className="text-gray-400 mt-1 leading-relaxed">
+                                        {excerpt}
+                                    </p>
+                                </div>
+                                <button className="mt-2 outline-none flex items-center text-[14px] text-purple-600 decoration-purple-600 hover:underline">
+                                    READ MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </button>
+                            </Link>
+                        </div>
     </div>
   )
 }
