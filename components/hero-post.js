@@ -21,32 +21,23 @@ export default function HeroPost({
 
   return (
     <section>
-       {/* <h1 className="text-[2rem] my-12 text-white font-sans font-bold tracking-tighter leading-tight md:pr-8">
-      Latest post
-      </h1> */}
       
-          <div className="w-full mx-auto group sm:max-w-sm" >
-                                <Link href={`posts/${slug}`}>
-                                <div className=' bg-white lg:object-cover w-[100%]'>
+          <div className=" bg-white flex pb-6 flex-col items-center justify-center " >
+           <Link href={`posts/${slug}`}>
+       <div className='p-4 bg-white w-[100%] max-w-3xl'>
         <CoverImage slug={slug} title={title} image={coverImage} priority />
-        </div> <div className="mt-3 space-y-2">
-                                        <span className="block font-sans text-purple-600 text-sm"><Date dateString={date} /></span>
-                                        <h3 className="text-lg font-sans text-white duration-150 group-hover:text-indigo-600 font-semibold">
+        </div>
+         <div className="px-4 space-y-2 pr-8 max-w-3xl ">
+                                        <span className="block font-sans text-purple-600 text-sm">
+                                          <Date dateString={date} />
+                                        </span>
+                                        <h3 className="text-[1.2rem] xl:text-[1.5rem] font-sans text-black font-semibold">
                                             {title}
                                         </h3>
-                                        <p className="text-gray-300 font-sans pr-12 text-sm duration-150 group-hover:text-gray-100">{excerpt}</p>
+                                        <p className="text-gray-800 font-sans xl:text-[1.2rem] text-[1rem] ">{excerpt}</p>
                                     </div>
                                 </Link>
-                            </div>
-          {/* <Date dateString={date} /> */}
-        
-          {/* 
-          <div className="mb-4 font-sans mt-[2rem]  font-medium text-[#303030] flex flex-col justify-center text-lg md:mb-0">
-          {author && <Avatar name={author.name} picture={author.picture} />} 
-            <button onClick={handleClick} className=' text-white bg-purple-600 p-2 rounded-[6rem] w-[8rem]'>Read article</button>
-          </div> */}
-        
-      
+                            </div>   
       
     </section>
   )
