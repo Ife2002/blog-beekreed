@@ -18,11 +18,11 @@ export default function PostPlug({
                             <Link href={`posts/${slug}`}>
                             <CoverImage slug={slug} title={title} image={coverImage} priority />
                                 
-                                <div className=" bg-[#fbeaff] px-6 py-[10%]">
-                                <span className="block text-gray-400 text-sm">
+                                <div className="py-[8%]">
+                                {/* <span className="block text-gray-400 text-sm">
                                 <Date dateString={date} />
-                                </span>
-                                    <h3 className="text-2xl mt-5 text-black font-medium hover:underline">
+                                </span> */}
+                                    <h3 className="text-2xl mt-1 text-white font-medium hover:underline">
                                         {title}
                                     </h3>
                                     <p className="text-gray-400 mt-3 text-md leading-relaxed">

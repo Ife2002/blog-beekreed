@@ -2,7 +2,7 @@ import { CMS_NAME, CMS_URL } from '../lib/constants'
 
 export default function Intro() {
   return (
-    <section className="flex-col px-4 lg:px-[15%] xl:px-[22.5%] py-4 text-white bg-white md:flex-col flex items-start justify-center md:">
+    <section className="flex-col px-8 py-4 text-white bg-white md:flex-col flex items-start justify-center md:">
       <h1 className="xl:text-[2rem] lg:text-[1.8rem] text-[1.5rem] font-sans text-black md:text-[2rem] font-bold tracking-tighter leading-tight md:pr-8">
       Beekreed <span className='font-normal text-gray-600'>Blog</span>
       </h1>
