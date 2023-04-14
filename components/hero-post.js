@@ -22,15 +22,15 @@ export default function HeroPost({
   return (
     <section className='flex flex-col items-center justify-center bg-white'>
       <div className=" bg-white py-16 font-sans flex pb-6 flex-col items-center justify-center ">
-        <h2 className='xl:text-[4rem] text-[2rem] text-center xl:leading-[4.2rem] px-[20%] font-semibold'>The latest insights for you from us</h2>
-        <p className='px-[30%] mt-6 text-center'>Orci molestie nam vulputate nunc habitant gravida. Interdum vitae vivamus ipsum aliquet consectetur aliquam.</p>
+        <h2 className='xl:text-[4rem] text-[3rem] leading-[3.2rem] text-center xl:leading-[4.2rem] xl:px-[20%] font-semibold'>The latest insights for you from us</h2>
+        <p className='xl:px-[30%] px-[15%] mt-6 text-center'>Orci molestie nam vulputate nunc habitant gravida. Interdum vitae vivamus ipsum aliquet consectetur aliquam.</p>
       </div>
           <div className=" bg-white grid xl:grid-cols-2 max-w-[90%] py-12 items-center justify-center " >
            {/*  */}
-       <div className='p-4 bg-white w-[100%] max-w-3xl'>
+       <div className='xl:p-4 bg-white w-[100%] max-w-3xl'>
         <CoverImage slug={slug} title={title} image={coverImage} priority />
         </div>
-         <div className="px-4 space-y-2 pr-8 max-w-3xl ">
+         <div className="xl:px-4 xl:mt-0 mt-4 space-y-2 pr-8 max-w-3xl ">
                                         <span className="block font-sans font-medium text-purple-600 text-sm">
                                           <Date dateString={date} />
                                         </span>

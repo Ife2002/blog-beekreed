@@ -37,11 +37,8 @@ export default function PostBody({ content, author }) {
   }
 
   return (
-    <div className={`max-w-2xl font-sans text-white mx-auto ${markdownStyles.markdown}`}>
+    <div className={`max-w-2xl font-sans px-5 text-white mx-auto ${markdownStyles.markdown}`}>
       <PortableText value={content} components={myPortableTextComponents} />
-      <div className='w-[100%] flex justify-center'>
-        {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
     </div>
   )
 }
